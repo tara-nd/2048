@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2048</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1>2048</h1>
+        <hr>
+    
+        <!-- User Info -->
+        <div id="user-info">
+            <h3>Your High Score: <span id="high-score">0</span></h3>
+        </div>
+    
+        <!-- Game Info and Instructions -->
+        <div id="game-section">
+            <h2>Score: <span id="score">0</span></h2>
+    
+            <div id="instructions">
+                <h3>How to Play:</h3>
+                <p><strong>Use the Arrow Keys</strong> to move the tiles on the grid:</p>
+                <ul>
+                    <li><strong>Up, Down, Left, Right</strong> arrows shift the tiles in the respective directions.</li>
+                    <li><strong>Combine tiles</strong> with the same number to add them together and create a new tile (e.g., 2 + 2 = 4).</li>
+                </ul>
+                <p><strong>Objective:</strong> Reach the <strong>2048 tile</strong> by combining smaller tiles without running out of space.</p>
+                <p><strong>Good luck!</strong></p>
+            </div>
+            <hr>
+    
+            <div id="board">
+            </div>
+        </div>
+        <!-- Game Over Section (Initially Hidden) -->
+<div id="game-over" style="display: none;">
+    <h2>Game Over!</h2>
+    <p>Your final score: <span id="final-score">0</span></p>
+    <button onclick="playAgain()">Play Again</button>
+</div>
+
+    </body>
+    
+    
+</html>

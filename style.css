@@ -1,0 +1,102 @@
+/* Space-themed background and neon tiles */
+body {
+    background-color: #000000; /* Black background representing space */
+    color: #ffffff; /* White text color */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #ffffff; /* White for headers */
+}
+
+#board {
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    background-color: #1b1b1b; /* Dark grey board */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tile {
+    background-color: #333333; /* Darker tiles */
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Soft glow effect */
+    transition: all 0.2s ease-in-out;
+}
+
+.tile[data-value='2'] {
+    background-color: #00ffcc; /* Neon cyan for tile 2 */
+    color: #000000;
+}
+
+.tile[data-value='4'] {
+    background-color: #ff33cc; /* Neon pink for tile 4 */
+    color: #000000;
+}
+
+.tile[data-value='8'] {
+    background-color: #ffff66; /* Neon yellow for tile 8 */
+    color: #000000;
+}
+
+.tile[data-value='16'] {
+    background-color: #ff6699; /* Neon soft pink for tile 16 */
+    color: #000000;
+}
+
+.tile[data-value='32'] {
+    background-color: #66ff66; /* Neon green for tile 32 */
+    color: #000000;
+}
+
+.tile[data-value='64'] {
+    background-color: #ff3300; /* Neon orange for tile 64 */
+    color: #000000;
+}
+
+.tile[data-value='128'] {
+    background-color: #ff0066; /* Neon magenta for tile 128 */
+    color: #000000;
+}
+
+.tile[data-value='256'] {
+    background-color: #00ccff; /* Neon blue for tile 256 */
+    color: #000000;
+}
+
+.tile[data-value='512'] {
+    background-color: #9933ff; /* Neon purple for tile 512 */
+    color: #000000;
+}
+
+.tile[data-value='1024'] {
+    background-color: #ff9933; /* Neon peach for tile 1024 */
+    color: #000000;
+}
+
+.tile[data-value='2048'] {
+    background-color: #33ffcc; /* Neon turquoise for tile 2048 */
+    color: #000000;
+}
+
+.tile {
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8); /* Glowing effect for tiles */
+}
+
+hr {
+    border-color: #ffffff; /* White line for separation */
+}
+
+#instructions {
+    color: #ffffff; /* White instructions */
+}
